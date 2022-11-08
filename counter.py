@@ -28,12 +28,13 @@ class Counter:
     def state(self):
         del self._value
 
-    state = property(get_state)
-    state = state.getter(get_state)
-    state = state.setter(set_state)
-    state = state.deleter(del_state)
+    # state = property(get_state)
+    # state = state.getter(get_state)
+    # state = state.setter(set_state)
+    # state = state.deleter(del_state)
 
 counter1 = Counter()
+
 counter1.state = 10
 print(counter1.state)
 # del counter1.state
